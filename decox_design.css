@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --primary: #0a2a3b;
+    --secondary: #8b5b19;
+    --header__height: 68px;
+
+}
+
+.font-2 {
+    font-family: "Poppins", sans-serif;
+}
+
+/* (big screen) */
+@media only screen and (max-width: 1200px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header>.flex {
+        flex-direction: column;
+    }
+
+    .menu__drop3__2col {
+        grid-template-columns: repeat(1, 1fr) !important;
+        width: 300px !important;
+    }
+}
+
+/* (lap, desktop) */
+@media only screen and (max-width: 992px) {
+
+    .channel__video {
+        height: 350px !important;
+    }
+
+    .menu__drop3 {
+        top: 100% !important;
+        left: 20% !important;
+    }
+}
+
+/* (big tablets) */
+@media only screen and (max-width: 768px) {
+
+    .channel__video {
+        height: 250px !important;
+    }
+
+    .menu__drop2 {
+        top: 100% !important;
+        left: 20% !important;
+    }
+
+    .foot {
+        display: flex !important;
+        flex-direction: column;
+    }
+}
+
+/* (phones, tablets) */
+@media only screen and (max-width: 600px) {}
+
+
+.header {}
+
+.header__nav ul {
+    flex-wrap: wrap;
+}
+
+.bg__logo {
+    background: linear-gradient(to right, #224457 0%, #020616 40%, #264c5d 60%, #020616 100%);
+}
+
+.menu__drop {
+    top: 100%;
+    right: 0;
+    width: 300px;
+    display: none;
+}
+
+.menu__drop2,
+.menu__drop3 {
+    top: -8px;
+    left: 100%;
+    width: 300px;
+    display: none;
+    z-index: 10;
+}
+
+
+.menu__drop3__2col {
+    width: 600px;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+.menu:hover .menu__drop {
+    display: block;
+}
+
+.menu__drop li:hover .menu__drop2 {
+    display: block;
+}
+
+.menu__drop2 li:hover .menu__drop3 {
+    display: block;
+}
+
+.menu__drop2 li:hover .menu__drop3__2col {
+    display: grid;
+}
+
+.btn__decox {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.btn__decox:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.sec__3 {
+    grid-template-columns: 2fr 1fr;
+}
+
+.sec__3__item__1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.colection .swiper-slide {
+    height: calc((100% - 20px) / 2) !important;
+}
+
+
+.colection .swiper-pagination {
+    margin-top: 100px;
+}
+
+.colection__bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px !important;
+}
+
+.collection__item:hover .collection__item__tittle {
+    display: block;
+}
+
+.channel {
+    grid-template-columns: 1fr 4fr;
+}
+
+.channel__video {
+    height: 550px;
+    transition: 0.5s;
+}
+
+.channel__play__item:hover .channel__play__btn {
+    display: block;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 30px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    /* fixed height, cao hơn độ cao của item cao nhất */
+    height: 600px;
+}
+
+.item {
+    width: 32%;
+    margin-bottom: 2%;
+}
+
+/* sắp xếp lại theo từng dòng */
+.item:nth-child(3n+1) {
+    order: 1;
+}
+
+.item:nth-child(3n+2) {
+    order: 2;
+}
+
+
+.item:nth-child(3n) {
+    order: 3;
+}
+
+
+/* bắt buộc chèn vào cột mới */
+.container::before,
+.container::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 2;
+}
+
+.masonry {
+    display: flex;
+}
+
+.masonry img {
+    max-width: 100%;
+}
+
+.masonry .masonry-col:not(:last-child) {
+    margin-right: 20px;
+}
+
+.masonry-item {
+    margin-bottom: 20px;
+    /* width: 200px; */
+}
+
+.item__item {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}

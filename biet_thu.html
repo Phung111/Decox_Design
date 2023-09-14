@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biệt thự (Villa)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./men.css">
+    <link rel="stylesheet" href="./decox_design.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header flex justify-center">
+            <div class="flex px-12 py-4">
+                <div class="bg__logo flex w100-1200 justify-between-1200">
+                    <div class="flex">
+                        <div class="flex-middle px-40 ">
+                            <a href="./decox_design.html">
+                                <img src="./img/decoxdesign.svg" alt="Logo" width="132px" height="28px">
+                            </a>
+                        </div>
+                        <div class="menu relative flex-middle px-20 py-20 text-white">
+                            <div class="fs-20 mr-12">Menu</div>
+                            <div><i class="fa-solid fa-bars fs-28"></i></div>
+                            <div class="menu__drop br-8 absolute bs-5 z-10 bg-white">
+                                <nav>
+                                    <ul class="px-8 py-8 flex flex-col">
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Thiết kế nội thất</div>
+                                                <div><i class="fa-solid fa-caret-right"></i></div>
+                                            </a>
+                                            <div class="menu__drop2 absolute" style="padding-left: 16px;">
+                                                <ul class="px-8 py-8 flex flex-col br-8  z-10 bg-white bs-5">
+                                                    <li class="relative">
+                                                        <a href="#"
+                                                            class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                            <div>Villa, Biệt thự</div>
+                                                            <div><i class="fa-solid fa-caret-right"></i></div>
+                                                        </a>
+                                                        <div class="menu__drop3 absolute" style="padding-left: 16px;">
+                                                            <ul class="br-8 z-10 bg-white bs-5 px-8 py-8 flex flex-col">
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Biệt thự (Villa)</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="#"
+                                                            class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                            <div>Penthouse, Duplex</div>
+                                                            <div><i class="fa-solid fa-caret-right"></i></div>
+                                                        </a>
+                                                        <div class="menu__drop3 absolute" style="padding-left: 16px;">
+                                                            <ul class="br-8 z-10 bg-white bs-5 px-8 py-8 flex flex-col">
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Penthouse, Duplex</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="#"
+                                                            class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                            <div>Khách sạn</div>
+                                                            <div><i class="fa-solid fa-caret-right"></i></div>
+                                                        </a>
+                                                        <div class="menu__drop3 absolute" style="padding-left: 16px;">
+                                                            <ul class="br-8 z-10 bg-white bs-5 px-8 py-8 flex flex-col">
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Nội thất khách sạn</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Căn hộ dịch vụ</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="#"
+                                                            class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                            <div>Nhà phố</div>
+                                                            <div><i class="fa-solid fa-caret-right"></i></div>
+                                                        </a>
+                                                        <div class="menu__drop3 absolute" style="padding-left: 16px;">
+                                                            <ul class="br-8 z-10 bg-white bs-5 px-8 py-8 flex flex-col">
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Nội thất nhà phố</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>New City An Phú</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="#"
+                                                            class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                            <div>Chung cư</div>
+                                                            <div><i class="fa-solid fa-caret-right"></i></div>
+                                                        </a>
+                                                        <div class="menu__drop3 absolute" style="padding-left: 16px;">
+                                                            <ul
+                                                                class="menu__drop3__2col br-8 z-10 bg-white bs-5 px-8 py-8 flex flex-col">
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Empire City</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="#"
+                                                            class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                            <div>Nhà hàng - Cafe</div>
+                                                            <div><i class="fa-solid fa-caret-right"></i></div>
+                                                        </a>
+                                                        <div class="menu__drop3 absolute" style="padding-left: 16px;">
+                                                            <ul class="br-8 z-10 bg-white bs-5 px-8 py-8 flex flex-col">
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Nhà hàng</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Cafe</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="#"
+                                                            class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                            <div>Showroom</div>
+                                                            <div><i class="fa-solid fa-caret-right"></i></div>
+                                                        </a>
+                                                        <div class="menu__drop3 absolute" style="padding-left: 16px;">
+                                                            <ul class="br-8 z-10 bg-white bs-5 px-8 py-8 flex flex-col">
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Showroom</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="relative">
+                                                        <a href="#"
+                                                            class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                            <div>Văn phòng</div>
+                                                            <div><i class="fa-solid fa-caret-right"></i></div>
+                                                        </a>
+                                                        <div class="menu__drop3 absolute" style="padding-left: 16px;">
+                                                            <ul class="br-8 z-10 bg-white bs-5 px-8 py-8 flex flex-col">
+                                                                <li class="relative">
+                                                                    <a href="#"
+                                                                        class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                                        <div>Văn phòng</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Thiết kế kiến trúc</div>
+                                                <div><i class="fa-solid fa-caret-right"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Công trình thực tế</div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Quản lý dự án</div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Phát triển dự án</div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Báo giá</div>
+                                                <div><i class="fa-solid fa-caret-right"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Diện tích</div>
+                                                <div><i class="fa-solid fa-caret-right"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Số phòng</div>
+                                                <div><i class="fa-solid fa-caret-right"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Phong cách</div>
+                                                <div><i class="fa-solid fa-caret-right"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Tỉnh thành</div>
+                                                <div><i class="fa-solid fa-caret-right"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Video</div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Giới thiệu</div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Tư vấn</div>
+                                                <div><i class="fa-solid fa-caret-right"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="relative">
+                                            <a href="#"
+                                                class="flex justify-between align-center br-8 hover-gray py-6 px-10">
+                                                <div>Tuyển dụng</div>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </nav>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-middle px-8 py-8 w100">
+                        <span class="relative flex-middle w100">
+                            <input class="px-12 py-12 text-black bg-white br-4 w100" type="text"
+                                placeholder="Nhập từ khoá...">
+                            <span class="absolute r0 fs-20 mr-2 "><i
+                                    class="fa-solid fa-magnifying-glass px-8 py-8 br-8 hover-primary"></i></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="header__nav flex-middle">
+                    <nav>
+                        <ul>
+                            <li><a href="./mau_nha_dep.html" class="flex-middle flex-col px-8 py-8 hover-gray"
+                                    style="width: 76px;">
+                                    <span><img src="./img/mau-nha-dep.svg" alt="mẫu nhà đẹp" width="36px"
+                                            height="36px"></span>
+                                    <span class="upcase fs-10 fw-600">mẫu nhà đẹp</span>
+                                </a></li>
+                            <li><a href="./mau_nha_dep.html" class="flex-middle flex-col px-8 py-8 hover-gray"
+                                    style="width: 76px;">
+                                    <span><img src="./img/phong-khach.svg" alt="phòng khách" width="36px"
+                                            height="36px"></span>
+                                    <span class="upcase fs-10 fw-600">phòng khách</span>
+                                </a></li>
+                            <li><a href="./mau_nha_dep.html" class="flex-middle flex-col px-8 py-8 hover-gray"
+                                    style="width: 76px;">
+                                    <span><img src="./img/phong-bep.svg" alt="" width="36px" height="36px"></span>
+                                    <span class="upcase fs-10 fw-600">phòng bếp</span>
+                                </a></li>
+                            <li><a href="./mau_nha_dep.html" class="flex-middle flex-col px-8 py-8 hover-gray"
+                                    style="width: 76px;">
+                                    <span><img src="./img/phong-ngu.svg" alt="" width="36px" height="36px"></span>
+                                    <span class="upcase fs-10 fw-600">phòng ngủ</span>
+                                </a></li>
+                            <li><a href="./mau_nha_dep.html" class="flex-middle flex-col px-8 py-8 hover-gray"
+                                    style="width: 76px;">
+                                    <span><img src="./img/tre-em.svg" alt="" width="36px" height="36px"></span>
+                                    <span class="upcase fs-10 fw-600">trẻ em</span>
+                                </a></li>
+                            <li><a href="./mau_nha_dep.html" class="flex-middle flex-col px-8 py-8 hover-gray"
+                                    style="width: 76px;">
+                                    <span><img src="./img/giat-phoi.svg" alt="" width="36px" height="36px"></span>
+                                    <span class="upcase fs-10 fw-600">giặt phơi</span>
+                                </a></li>
+                            <li><a href="./mau_nha_dep.html" class="flex-middle flex-col px-8 py-8 hover-gray"
+                                    style="width: 76px;">
+                                    <span><img src="./img/rest-room.svg" alt="" width="36px" height="36px"></span>
+                                    <span class="upcase fs-10 fw-600">rest room</span>
+                                </a></li>
+                            <li><a href="./mau_nha_dep.html" class="flex-middle flex-col px-8 py-8 hover-gray"
+                                    style="width: 76px;">
+                                    <span><img src="./img/phong-lam-viec.png" alt="" width="36px" height="36px"></span>
+                                    <span class="upcase fs-10 fw-600">làm việc</span>
+                                </a></li>
+                            <li><a href="./mau_nha_dep.html" class="flex-middle flex-col px-8 py-8 hover-gray"
+                                    style="width: 76px;">
+                                    <span><img src="./img/phong-giai-tri.png" alt="" width="36px" height="36px"></span>
+                                    <span class="upcase fs-10 fw-600">giải trí</span>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+
+    <div class="flex bg-gray px-12 py-12 ml-60 mr-60 mt-20">
+        Trang chủ > Biệt thự (Villa)
+    </div>
+
+    <section>
+        <div class="flex flex-col px-120 py-20">
+            <div class="mb-12">
+                <h3 class="text-primary text-justify lh-30 fs-16 fw-700">35+ Mẫu thiết kế nội thất biệt thự (Villa) cao
+                    cấp đẹp sang trọng
+                    đẳng cấp nhất 2023</h3>
+            </div>
+            <div class="mb-12">
+                <p class="text-justify lh-30">Song song với một công trình kiến trúc biệt thự đẹp là sự hoàn thiện, chỉn
+                    chu
+                    trong cách bố
+                    cục, sắp xếp và trang trí. Vậy nên, thiết kế nội thất luôn là công đoạn không thể thiếu khi xây dựng
+                    nhà biệt thự. Việc tạo ra
+                    được sự kết nối trong phong cách thiết kế, xuyên suốt từ kiến trúc cho đến nội thất sẽ giúp tổ ấm
+                    của bạn thêm phần
+                    hoàn hảo, đẳng cấp. Và nếu bạn đang tìm kiếm một ý tưởng cho không gian biệt thự của mình thì đừng
+                    bỏ lỡ những mẫu thiết
+                    kế nội thất biệt thự đẹp, sang trọng mà Decox Design đã tổng hợp ngay sau đây!</p>
+            </div>
+            <div class="mb-12">
+                <h2 class="text-primary text-justify lh-30 fs-18 fw-700 mt-8 mb-8">Mẫu nội thất biệt thự hiện đại</h2>
+            </div>
+            <div class="mb-12">
+                <p class="text-justify lh-30">Phong cách hiện đại là một trong những phong cách được yêu thích và chọn
+                    lựa nhiều nhất khi thiết kế nội thất trong
+                    những năm gần đây. Với đặc điểm đơn giản trong đường nét hình khối, đảm bảo cả về thẩm mỹ lẫn công
+                    năng cùng với ngân
+                    sách đầu tư không quá cao nên phong cách này phù hợp với hầu hết loại hình nhà ở từ chung cư, nhà
+                    phố cho đến biệt thự.</p>
+            </div>
+            <div class="mb-12">
+                <p class="text-justify lh-30">Tuy nhiên, có một số gia chủ cho rằng việc vận dụng phong cách có phần
+                    giản dị như vậy vào trong không gian biệt thự là
+                    không phù hợp vì không thể hiện được sự sang trọng cũng như đẳng cấp của gia chủ. Thế nhưng, với mẫu
+                    thiết kế nội thất
+                    biệt thự hiện đại sau đây sẽ làm bạn thay đổi suy nghĩ trên, cùng theo dõi xem biệt thự này có gì
+                    nhé!</p>
+            </div>
+            <div class="mb-12 px-60 flex flex-col">
+                <div class="flex">
+                    <img src="./img/bt1.jpg" width="100%">
+                </div>
+                <div class="flex-middle py-12 bg-gray">
+                    Mẫu thiết kế nội thất biệt thự theo phong cách hiện đại, trẻ trung
+                </div>
+            </div>
+            <div class="mb-12">
+                <p class="text-justify lh-30">Mẫu nội thất biệt thự hiện đại sau đây tọa lạc tại quận 2, Thành phố Hồ
+                    Chí Minh với diện tích lý tưởng lên đến 1000m2.
+                    Ở đây gia chủ đã chọn lựa bố cục căn nhà thiên về công năng hơn với số phòng ngủ lên đến 6 phòng
+                    cùng những khu vực phục
+                    vụ cho sinh hoạt, giải trí như phòng yoga, phòng spa….</p>
+            </div>
+            <div class="mb-12">
+                <p class="text-justify lh-30">Ngay khi đặt chân vào cửa ra vào là bạn đã đến ngay khu vực khách - bếp
+                    của biệt thự. Thiết kế theo dạng mở giữa hai khu
+                    vực giúp không gian thêm phần rộng rãi, thoáng đãng cũng như tạo sự thuận lợi khi di chuyển. Để ngầm
+                    phân chia chức năng
+                    ở mỗi khu vực KTS đã bố trí thêm bàn ăn rộng lên đến 8 chỗ ngồi.</p>
+            </div>
+            <div class="mb-12 px-60 flex flex-col">
+                <div class="flex">
+                    <img src="./img/bt1.jpg" width="100%">
+                </div>
+                <div class="flex-middle py-12 bg-gray">
+                    Mẫu thiết kế nội thất biệt thự theo phong cách hiện đại, trẻ trung
+                </div>
+            </div>
+            <div class="mb-12">
+                <p class="text-justify lh-30">Chọn lựa tone trắng làm màu sơn tường vừa tạo được nét thanh lịch, tinh tế
+                    vừa là phông nền hoàn hảo giúp nổi bật các
+                    chi tiết khác trong nhà như mảng tường ốp đá sang trọng phía sau khu vực tivi hay bộ sofa êm ái.</p>
+            </div>
+            <div class="mb-12 px-60 flex flex-col">
+                <div class="flex">
+                    <img src="./img/bt1.jpg" width="100%">
+                </div>
+                <div class="flex-middle py-12 bg-gray">
+                    Mẫu thiết kế nội thất biệt thự theo phong cách hiện đại, trẻ trung
+                </div>
+            </div>
+            <div class="mb-12 px-60 flex flex-col">
+                <div class="flex">
+                    <img src="./img/bt1.jpg" width="100%">
+                </div>
+                <div class="flex-middle py-12 bg-gray">
+                    Mẫu thiết kế nội thất biệt thự theo phong cách hiện đại, trẻ trung
+                </div>
+            </div>
+            <div class="mb-12">
+                <p class="text-justify lh-30">Thiết kế bếp theo dạng chữ I đơn giản tiết kiệm diện tích, bố trí thêm hệ
+                    tủ bếp trên và dưới giúp gia chủ có thêm nhiều
+                    không gian lưu trữ cũng như bảo quản đồ đạc, giúp bếp luôn gọn gàng. Kết hợp thêm bàn đảo thông minh
+                    vừa là nơi lý tưởng
+                    để những món ăn ngon vừa trưng bày những chai rượu quý, tô điểm thêm sự đẳng cấp của gia chủ.</p>
+            </div>
+            <div class="mb-12 px-60 flex flex-col">
+                <div class="flex">
+                    <img src="./img/bt1.jpg" width="100%">
+                </div>
+                <div class="flex-middle py-12 bg-gray">
+                    Mẫu thiết kế nội thất biệt thự theo phong cách hiện đại, trẻ trung
+                </div>
+            </div>
+            <div class="mb-12 px-60 flex flex-col">
+                <div class="flex">
+                    <img src="./img/bt1.jpg" width="100%">
+                </div>
+                <div class="flex-middle py-12 bg-gray">
+                    Mẫu thiết kế nội thất biệt thự theo phong cách hiện đại, trẻ trung
+                </div>
+            </div>
+            <div class="mb-12">
+                <p class="text-justify lh-30">Phòng ngủ master rộng rãi được tích hợp thêm nhiều khu vực bên trong từ
+                    như nơi tiếp khách, nghỉ ngơi, phòng thay đồ và
+                    phòng tắm. Ở đây các KTS chọn lựa chủ yếu là chất liệu gỗ cùng tone màu trung tính để tạo cảm giác
+                    vừa thanh lịch vừa ấm
+                    cúng.</p>
+            </div>
+            <div class="mb-12 px-60 flex flex-col">
+                <div class="grid col-2 gap-12">
+                    <img src="./img/bt1.jpg" width="100%">
+                    <img src="./img/bt1.jpg" width="100%">
+                    <img src="./img/bt1.jpg" width="100%">
+                    <img src="./img/bt1.jpg" width="100%">
+                </div>
+                <div class="flex-middle py-12 bg-gray">
+                    Mẫu thiết kế nội thất biệt thự theo phong cách hiện đại, trẻ trung
+                </div>
+            </div>
+            <div class="mb-12">
+                <p class="text-justify lh-30">Khu vực phòng ngủ cho bé trai và bé gái được bố trí đối diện nhau, phòng
+                    ngủ bé trai lấy gam màu xanh chủ đạo đem đến sự
+                    tươi tắn, sinh động. Ngược lại, gam hồng chủ đạo trong thiết kế phòng ngủ bé gái sẽ đem đến cảm giác
+                    ngọt ngào, dễ
+                    thương vô cùng thích hợp với những cô công chúa nhỏ.</p>
+            </div>
+            <div class="flex-middle mb-60 w100">
+                <div>
+                    <div class="btn__decox" onclick="showMore()">Xem thêm...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="flex flex-col mb-60 px-120 ">
+            <div class="flex-middle flex-col">
+                <h2 class="fs-24 fw-700 mb-20">Khuông Việt Villa</h2>
+                <p class="fs-14 fw-400 mb-20">Trên 120m2, Phong cách bán cổ điển - Neoclassical style, Biệt Thự (Villa)
+                </p>
+            </div>
+            <div class="overflow-hidden mb-60">
+                <div class="grid" style="grid-template-columns: 3fr 1fr; gap: 20px;">
+                    <div class="flex item__item">
+                        <img src="./img/bt1.jpg" width="100%">
+                    </div>
+                    <div class="flex">
+                        <img src="./img/bt1.jpg" width="100%">
+                    </div>
+                    <div class="flex">
+                        <img src="./img/bt1.jpg" width="100%">
+                    </div>
+                    <div class="flex">
+                        <img src="./img/bt1.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="flex-middle w100">
+                <div>
+                    <div class="btn__decox" onclick="showMore()">Xem thêm...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+    </section>
+    <div class="flex flex-col px-120 mb-40 overflow-hidden">
+        <div class="flex-middle mb-40">
+            <span class="bg-primary" style="width: 300px; height: 2.5px;"></span>
+            <span class="upcase fs-24 fw-700 font-2 px-40 text-center">Thiết kế mới</span>
+            <span class="bg-primary" style="width: 300px; height: 2.5px;"></span>
+        </div>
+        <div class="flex overflow-hidden">
+            <div class="swiper my__swiper5">
+                <div class="ntm5 swiper-wrapper">
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <hr class="hr-dash mb-40 ml-60 mr-60">
+        <div class="grid col-3 col-2-1200 gap-20 px-120 mb-40">
+            <div class="flex bs-5 br-4 overflow-hidden rf-col-2-1200 hover relative">
+                <img src=" ./img/sec21.svg">
+            </div>
+            <div class="flex flex-col bs-5 br-4 overflow-hidden">
+                <div><img src="./img/sec22.jpg" width="100%" height="100%"></div>
+                <div class="flex flex-col justify-between h100">
+                    <div class="fs-24 fw-700 text-center mb-12 px-12">Về Decox</div>
+                    <div class="flex flex-col">
+                        <div class="px-12 lh-24 text-ov-3 mb-12 text-justify">10 năm kinh nghiệm trong lĩnh vực thiết kế
+                            kiến trúc
+                            nội
+                            thất tại
+                            Việt Nam,
+                            Decox mang đến những giá trị sống mới, chuẩn
+                            mực mới, hãy để chúng tôi mang đến giá trị tinh thần và sự bền vững cho cuộc sống của bạn.
+                            Tìm
+                            hiểu về Decox tại đây</div>
+                        <div class="flex-middle ">
+                            <a href="#">
+                                <div class="upcase btn__decox fw-700 mb-12">đăng ký tư vấn</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bs-5 br-4 overflow-hidden ">
+                <div><img src="./img/sec22.jpg" width="100%" height="100%"></div>
+                <div class="flex flex-col justify-between h100">
+                    <div class="fs-24 fw-700 text-center mb-12 px-12">Bạn cần thi công theo bản vẽ?</div>
+                    <div class="flex flex-col">
+                        <div class="px-12 lh-24 text-ov-3 mb-12 text-justify">Bạn sắp về nhà mới và đã có bản
+                            vẽ thiết kế
+                            nội
+                            thất, bạn
+                            đang cần tìm một nhà thầu uy tín để thi công?</div>
+                        <div class="flex-middle ">
+                            <a href="#">
+                                <div class="upcase btn__decox fw-700 mb-12">nhận báo giá</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="flex flex-col px-60 py-20 bg-gray">
+            <div class="mb-20">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="capital px-12 py-12 fs-18 fw-700 text-primary hover-gray">giới thiệu</a>
+                        </li>
+                        <li><a href="#" class="capital px-12 py-12 fs-18 fw-700 text-primary hover-gray">tuyển dụng</a>
+                        </li>
+                        <li><a href="#" class="capital px-12 py-12 fs-18 fw-700 text-primary hover-gray">hợp tác</a>
+                        </li>
+                        <li><a href="#" class="capital px-12 py-12 fs-18 fw-700 text-primary hover-gray">hỗ trợ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="foot grid gap-20 " style="grid-template-columns: 2fr 2fr 1fr;">
+                <div class="flex flex-col">
+                    <div class="grid col-2 gap-20">
+                        <div class="flex-middle py-60">
+                            <a href="#"><img src="./img/logo-footer.png" alt="logo-footer" width="132px"
+                                    height="28px"></a>
+                        </div>
+                        <div>
+                            <p class="mb-8 fs-14">Công ty cổ phần Decox</p>
+                            <p class="mb-8 fs-14">Hotline: 0901 411 489</p>
+                            <p class="mb-8 fs-14">Email: sale1@decox.vn</p>
+                            <p class="mb-16 fs-14">© All rights reserved. Decox 2013-2021</p>
+                            <p class="fs-14 flex fs-24">
+                                <i class="fa-brands fa-facebook-f px-12"></i>
+                                <i class="fa-brands fa-instagram px-12"></i>
+                                <i class="fa-brands fa-youtube px-12"></i>
+                                <i class="fa-brands fa-tiktok px-12"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div class="mb-20">
+                        <p class="fw-600 mb-8 fs-14 text-justify">TP Hồ Chí Minh:</p>
+                        <p class="mb-8 fs-14 text-justify">Lầu 8 Tòa nhà M-H Building, 728-730 Võ Văn Kiệt, Phường 1,
+                            Quận
+                            5, TP Hồ Chí
+                            Minh
+                        </p>
+                        <p class="mb-8 fs-14 text-justify">Điện thoại: (028) 36 200 560 - 0901 411 489</p>
+                        <p class="mb-8 fs-14 text-justify text-u text-i"><a href="#">Xem bản đồ</a></p>
+                    </div>
+                    <div class="mb-20">
+                        <p class="fw-600 mb-8 fs-14 text-justify">Hà Nội:</p>
+                        <p class="mb-8 fs-14 text-justify">Số 10, P. Miếu Đầm, Mễ Trì, Từ Liêm, Hà Nội</p>
+                        <p class="mb-8 fs-14 text-justify">Điện thoại: (028) 36 200 560 - 035 454 9999</p>
+                        <p class="mb-8 fs-14 text-justify"><span class="fw-600">Nha Trang:</span> Tầng 9, Số 1 đường
+                            Trần
+                            Hưng Đạo, Tp
+                            Nha Trang.</p>
+                        <p class="mb-8 fs-14 text-justify"><span class="fw-600">Đà Nẵng:</span> 18 An Nhơn 3, An Hải
+                            Bắc,
+                            Sơn Trà, Đà
+                            Nẵng.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <p class="mb-8 fs-14 text-justify"><a href="#">Chính sách vận chuyển, giao nhận</a></p>
+                    <p class="mb-8 fs-14 text-justify"><a href="#">Chính sách hỗ trợ, bảo hành</a></p>
+                    <p class="mb-8 fs-14 text-justify"><a href="#">Chính sách đổi/trả và hoàn tiền</a></p>
+                    <p class="mb-8 fs-14 text-justify"><a href="#">Chính sách bảo mật thông tin</a></p>
+                    <p class="mb-16 fs-14 text-justify"><a href="#">Quy định về hình thức thanh toán</a></p>
+                    <p>
+                        <img src="./img/foot2.png" alt="foot2" width="90px" height="30px" class="mr-12">
+                        <img src="./img/foot3.png" alt="foot3" width="90px" height="30px">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/wookmark/wookmark.min.js"></script>
+    <script src="./img_source.js"></script>
+    <script>
+        const swiper5 = new Swiper('.my__swiper5', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const renderNtm = () => {
+            let render = all.map(function (item) {
+                return `
+                <div class="swiper-slide">
+                    <a href="./biet_thu.html">
+                        <div class="mb-16 br-8 overflow-hidden hover relative"><img src="${item.img}" width="100%" height="100%"></div>
+                        <div class="fs-20 fw-900 mb-16 text-primary text-wrap capital text-ov-2">${item.tittle}</div>
+                        <div class="text-gray capital text-ov-1">${item.des}</div>
+                    </a>
+                </div>
+                `
+            })
+            document.querySelector('.ntm5').innerHTML = render.join("");
+        }
+
+        renderNtm()
+
+
+    </script>
+
+</body>
+
+</html>
